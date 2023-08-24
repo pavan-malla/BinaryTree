@@ -1,0 +1,23 @@
+import React from 'react';
+import Tree from './components/Tree';
+import './App.css'
+
+const App = () => {
+  return (
+    <div className="app">
+      <nav className='flex justify-evenly'>
+        
+        <button className='buttonStyle'>Add</button>
+        <button className='buttonStyle'>Delete</button>
+        <button className='buttonStyle'>Traverse</button>
+        <button className='buttonStyle'>Clear</button>
+
+      </nav>
+      <h1 className='font-extrabold'>Binary Search Tree React App</h1>
+      <Tree />
+    </div>
+  );
+};
+
+export default App;
+

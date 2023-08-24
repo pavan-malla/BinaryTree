@@ -1,0 +1,101 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.tree {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tree-data:text {
+  color: red;
+}
+
+.tree-left {
+  background: dodgerblue;
+  display: inline-block;
+  width: 10%;
+}
+
+.tree-right {
+  background: darkturquoise;
+  display: inline-block;
+  width: 10%;
+}
+
+.form-control {
+  margin: 10px 0;
+}
+
+input {
+  width: 100px;
+}
+
+.input-button {
+  margin-left: 1rem;
+  width: 100px;
+}
+
+.find-min-button,
+.find-max-button {
+  margin-left: 1rem;
+  width: 110px;
+}
+
+.tf-custom {
+  width: 100%;
+}
+
+.tf-custom ul {
+  display: flex;
+  justify-content: center;
+}
+
+.tf-custom li {
+  width: 100%;
+}
+
+.tf-custom .tf-nc {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: none;
+  background: dodgerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
